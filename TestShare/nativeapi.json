@@ -1,0 +1,108 @@
+{
+    "NativeFunctionAPI": {
+        "iOS": {
+            "11.0": {
+                "Kony_FileStorage-iOS-11.0": {
+                    "title": "Kony_FileStorage",
+                    "platform": "iOS",
+                    "os": "11.0",
+                    "isDefault": true,
+                    "filepath": "TestShare\\nativebindings\\iOS\\11.0\\Kony_FileStorage-iOS-11.0.zip",
+                    "nfiversion": "2.0",
+                    "enable": true
+                },
+                "Kony_SyncV2-iOS-11.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "iOS",
+                    "os": "11.0",
+                    "isDefault": true,
+                    "filepath": "TestShare\\nativebindings\\iOS\\11.0\\Kony_SyncV2-iOS-11.0.zip",
+                    "nfiversion": "2.0",
+                    "enable": true
+                },
+                "Kony_SDKCommons-iOS-11.0": {
+                    "title": "Kony_SDKCommons",
+                    "platform": "iOS",
+                    "os": "11.0",
+                    "isDefault": true,
+                    "filepath": "TestShare\\nativebindings\\iOS\\11.0\\Kony_SDKCommons-iOS-11.0.zip",
+                    "nfiversion": "2.0",
+                    "enable": true
+                }
+            }
+        },
+        "Android": {
+            "4.0": {
+                "Kony_SDKCommons-Android-4.0": {
+                    "title": "Kony_SDKCommons",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "isDefault": true,
+                    "filepath": "TestShare\\nativebindings\\Android\\4.0\\Kony_SDKCommons-Android-4.0.zip",
+                    "enable": true
+                },
+                "Kony_SyncV2-Android-4.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "isDefault": true,
+                    "filepath": "TestShare\\nativebindings\\Android\\4.0\\Kony_SyncV2-Android-4.0.zip",
+                    "enable": true
+                },
+                "Kony_FileStorage-Android-4.0": {
+                    "title": "Kony_FileStorage",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "isDefault": true,
+                    "filepath": "TestShare\\nativebindings\\Android\\4.0\\Kony_FileStorage-Android-4.0.zip",
+                    "enable": true
+                },
+                "konympsocialshare-Android-4.0": {
+                    "title": "konympsocialshare",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "isDefault": false,
+                    "filepath": "TestShare\\nativebindings\\Android\\4.0\\konympsocialshare-Android-4.0.zip",
+                    "enable": true
+                }
+            },
+            "API level 29": {
+                "com.android.bitmap-Android-API level 29": {
+                    "title": "com.android.bitmap",
+                    "platform": "Android",
+                    "os": "API level 29",
+                    "url": "/visualizer/nativeframeworks/android/3.0/com.android.bitmap-Android-10.0.zip",
+                    "checksum": "c2d0f0a14031364612163aa1569a0ae769f3aa63",
+                    "filepath": "TestShare\\nativebindings\\Android\\API level 29\\com.android.bitmap-Android-10.0.zip",
+                    "isDefault": false,
+                    "enable": false
+                },
+                "android.content-Android-API level 29": {
+                    "title": "android.content",
+                    "platform": "Android",
+                    "os": "API level 29",
+                    "url": "/visualizer/nativeframeworks/android/3.0/android.content-Android-10.0.zip",
+                    "checksum": "53e3b47c3f155697162697ae6fa774ec863075e9",
+                    "filepath": "TestShare\\nativebindings\\Android\\API level 29\\android.content-Android-10.0.zip",
+                    "isDefault": false,
+                    "enable": true
+                },
+                "java.lang-Android-API level 29": {
+                    "title": "java.lang",
+                    "platform": "Android",
+                    "os": "API level 29",
+                    "url": "/visualizer/nativeframeworks/android/3.0/java.lang-Android-10.0.zip",
+                    "checksum": "34f8a8287320c853e7dff561c172cd5a64c6dcfb",
+                    "filepath": "TestShare\\nativebindings\\Android\\API level 29\\java.lang-Android-10.0.zip",
+                    "isDefault": false,
+                    "enable": true
+                }
+            }
+        }
+    },
+    "Metadata": {
+        "Version": {
+            "iOS": "2.0"
+        }
+    }
+}

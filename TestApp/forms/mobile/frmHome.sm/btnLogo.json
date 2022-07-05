@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sb5963c55fd54476991285da183fea37",
+    "_text_": "Click here for Screenshot",
+    "_top_": {
+        "type": "string",
+        "value": "355dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s3b2fb315b97434da853db9676956c4f",
+    "id": "btnLogo",
+    "ide_onClick": "AS_Button_421960ceba4342aa84a10ede385ea950",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d58e478b6e6f41de94016380c28ef903",
+    "name": "kony.ui.Button",
+    "parent": "Flxgrp",
+    "pf": "frmHome",
+    "wType": "Button"
+}

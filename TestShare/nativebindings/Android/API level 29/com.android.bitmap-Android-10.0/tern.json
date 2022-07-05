@@ -1,0 +1,598 @@
+{
+  "com": {
+    "android": {
+      "bitmap": {
+        "DecodeAggregator": {
+          "!url": "",
+          "!type": "fn()",
+          "prototype": {
+            "notifyAll": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notifyAll()"
+            },
+            "forget": {
+              "!type": "fn(key: +java.lang.Object) -> void",
+              "!url": ""
+            },
+            "toString": {
+              "!type": "fn() -> string",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#toString()"
+            },
+            "equals": {
+              "!type": "fn(obj: +java.lang.Object) -> bool",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#equals(java.lang.Object)"
+            },
+            "wait": {
+              "!type": "fn(timeout: +java.lang.Long) -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#wait(long)"
+            },
+            "execute": {
+              "!type": "fn(key: +java.lang.Object, task: +java.lang.Runnable) -> void",
+              "!url": ""
+            },
+            "hashCode": {
+              "!type": "fn() -> number",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#hashCode()"
+            },
+            "expect": {
+              "!type": "fn(key: +java.lang.Object, callback: +com.android.bitmap.ContiguousFIFOAggregator.Callback) -> void",
+              "!url": ""
+            },
+            "getClass": {
+              "!type": "fn() -> +java.lang.Class",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#getClass()"
+            },
+            "notify": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notify()"
+            }
+          }
+        },
+        "DecodeTask": {
+          "!url": "",
+          "!type": "fn(requestKey: +com.android.bitmap.RequestKey, decodeOpts: +com.android.bitmap.DecodeTask.DecodeOptions, factory: +com.android.bitmap.RequestKey.FileDescriptorFactory, callback: +com.android.bitmap.DecodeTask.DecodeCallback, cache: +com.android.bitmap.BitmapCache)",
+          "DecodeOptions": {
+            "!url": "",
+            "!type": "fn(destW: number, destH: number)",
+            "STRATEGY_TRUNCATE": {
+              "!type": "number",
+              "!url": ""
+            },
+            "STRATEGY_ROUND_NEAREST": {
+              "!type": "number",
+              "!url": ""
+            },
+            "STRATEGY_ROUND_UP": {
+              "!type": "number",
+              "!url": ""
+            },
+            "prototype": {
+              "hashCode": {
+                "!type": "fn() -> number",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#hashCode()"
+              },
+              "getClass": {
+                "!type": "fn() -> +java.lang.Class",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#getClass()"
+              },
+              "notify": {
+                "!type": "fn() -> void",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#notify()"
+              },
+              "notifyAll": {
+                "!type": "fn() -> void",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#notifyAll()"
+              },
+              "equals": {
+                "!type": "fn(obj: +java.lang.Object) -> bool",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#equals(java.lang.Object)"
+              },
+              "wait": {
+                "!type": "fn(timeout: +java.lang.Long) -> void",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#wait(long)"
+              },
+              "toString": {
+                "!type": "fn() -> string",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#toString()"
+              }
+            }
+          },
+          "DEBUG": {
+            "!type": "bool",
+            "!url": ""
+          },
+          "SERIAL_EXECUTOR": {
+            "!type": "+java.util.concurrent.Executor",
+            "!url": "http://developer.android.com/reference/android/os/AsyncTask.html#SERIAL_EXECUTOR"
+          },
+          "THREAD_POOL_EXECUTOR": {
+            "!type": "+java.util.concurrent.Executor",
+            "!url": "http://developer.android.com/reference/android/os/AsyncTask.html#THREAD_POOL_EXECUTOR"
+          },
+          "setDefaultExecutor": {
+            "!type": "fn(exec: +java.util.concurrent.Executor) -> void",
+            "!url": "http://developer.android.com/reference/android/os/AsyncTask.html#setDefaultExecutor(java.util.concurrent.Executor)"
+          },
+          "execute": {
+            "!type": "fn(runnable: +java.lang.Runnable) -> void",
+            "!url": "http://developer.android.com/reference/android/os/AsyncTask.html#execute(java.lang.Runnable)"
+          },
+          "prototype": {
+            "decode": {
+              "!type": "fn() -> +com.android.bitmap.ReusableBitmap",
+              "!url": ""
+            },
+            "notifyAll": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notifyAll()"
+            },
+            "toString": {
+              "!type": "fn() -> string",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#toString()"
+            },
+            "equals": {
+              "!type": "fn(obj: +java.lang.Object) -> bool",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#equals(java.lang.Object)"
+            },
+            "executeOnExecutor": {
+              "!type": "fn(exec: +java.util.concurrent.Executor, params: +java.newArray) -> +android.os.AsyncTask",
+              "!url": "http://developer.android.com/reference/android/os/AsyncTask.html#executeOnExecutor(java.util.concurrent.Executor, Params[])"
+            },
+            "get": {
+              "!type": "fn() -> +java.lang.Object",
+              "!url": "http://developer.android.com/reference/android/os/AsyncTask.html#get()"
+            },
+            "onPostExecute": {
+              "!type": "fn(result: +com.android.bitmap.ReusableBitmap) -> void",
+              "!url": ""
+            },
+            "isCancelled": {
+              "!type": "fn() -> bool",
+              "!url": "http://developer.android.com/reference/android/os/AsyncTask.html#isCancelled()"
+            },
+            "wait": {
+              "!type": "fn(timeout: +java.lang.Long) -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#wait(long)"
+            },
+            "execute": {
+              "!type": "fn(params: +java.newArray) -> +android.os.AsyncTask",
+              "!url": "http://developer.android.com/reference/android/os/AsyncTask.html#execute(Params[])"
+            },
+            "hashCode": {
+              "!type": "fn() -> number",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#hashCode()"
+            },
+            "getClass": {
+              "!type": "fn() -> +java.lang.Class",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#getClass()"
+            },
+            "notify": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notify()"
+            },
+            "getStatus": {
+              "!type": "fn() -> +android.os.AsyncTask.Status",
+              "!url": "http://developer.android.com/reference/android/os/AsyncTask.html#getStatus()"
+            },
+            "cancel": {
+              "!type": "fn() -> void",
+              "!url": ""
+            }
+          }
+        },
+        "UnrefedPooledCache": {
+          "!url": "",
+          "!type": "fn(targetSize: number, nonPooledFraction: +java.lang.Float)",
+          "prototype": {
+            "notifyAll": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notifyAll()"
+            },
+            "toString": {
+              "!type": "fn() -> string",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#toString()"
+            },
+            "equals": {
+              "!type": "fn(obj: +java.lang.Object) -> bool",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#equals(java.lang.Object)"
+            },
+            "toDebugString": {
+              "!type": "fn() -> string",
+              "!url": ""
+            },
+            "get": {
+              "!type": "fn(key: +java.lang.Object, incrementRefCount: bool) -> +com.android.bitmap.Poolable",
+              "!url": ""
+            },
+            "wait": {
+              "!type": "fn(timeout: +java.lang.Long) -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#wait(long)"
+            },
+            "clear": {
+              "!type": "fn() -> void",
+              "!url": ""
+            },
+            "put": {
+              "!type": "fn(key: +java.lang.Object, value: +com.android.bitmap.Poolable) -> +com.android.bitmap.Poolable",
+              "!url": ""
+            },
+            "poll": {
+              "!type": "fn() -> +com.android.bitmap.Poolable",
+              "!url": ""
+            },
+            "hashCode": {
+              "!type": "fn() -> number",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#hashCode()"
+            },
+            "offer": {
+              "!type": "fn(value: +com.android.bitmap.Poolable) -> void",
+              "!url": ""
+            },
+            "getClass": {
+              "!type": "fn() -> +java.lang.Class",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#getClass()"
+            },
+            "notify": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notify()"
+            }
+          }
+        },
+        "NamedThreadFactory": {
+          "!url": "",
+          "!type": "fn(baseName: string)",
+          "prototype": {
+            "newThread": {
+              "!type": "fn(runnable: +java.lang.Runnable) -> +java.lang.Thread",
+              "!url": ""
+            },
+            "hashCode": {
+              "!type": "fn() -> number",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#hashCode()"
+            },
+            "getClass": {
+              "!type": "fn() -> +java.lang.Class",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#getClass()"
+            },
+            "notify": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notify()"
+            },
+            "notifyAll": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notifyAll()"
+            },
+            "equals": {
+              "!type": "fn(obj: +java.lang.Object) -> bool",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#equals(java.lang.Object)"
+            },
+            "wait": {
+              "!type": "fn(timeout: +java.lang.Long) -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#wait(long)"
+            },
+            "toString": {
+              "!type": "fn() -> string",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#toString()"
+            }
+          }
+        },
+        "ReusableBitmap": {
+          "!url": "",
+          "!type": "fn(bitmap: +android.graphics.Bitmap)",
+          "NullReusableBitmap": {
+            "!url": "",
+            "getInstance": {
+              "!type": "fn() -> +com.android.bitmap.ReusableBitmap.NullReusableBitmap",
+              "!url": ""
+            },
+            "prototype": {
+              "getLogicalHeight": {
+                "!type": "fn() -> number",
+                "!url": ""
+              },
+              "notifyAll": {
+                "!type": "fn() -> void",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#notifyAll()"
+              },
+              "setLogicalHeight": {
+                "!type": "fn(h: number) -> void",
+                "!url": ""
+              },
+              "getOrientation": {
+                "!type": "fn() -> number",
+                "!url": ""
+              },
+              "getRefCount": {
+                "!type": "fn() -> number",
+                "!url": ""
+              },
+              "setLogicalWidth": {
+                "!type": "fn(w: number) -> void",
+                "!url": ""
+              },
+              "equals": {
+                "!type": "fn(obj: +java.lang.Object) -> bool",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#equals(java.lang.Object)"
+              },
+              "notify": {
+                "!type": "fn() -> void",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#notify()"
+              },
+              "isEligibleForPooling": {
+                "!type": "fn() -> bool",
+                "!url": ""
+              },
+              "wait": {
+                "!type": "fn(timeout: +java.lang.Long) -> void",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#wait(long)"
+              },
+              "getByteCount": {
+                "!type": "fn() -> number",
+                "!url": ""
+              },
+              "toString": {
+                "!type": "fn() -> string",
+                "!url": ""
+              },
+              "hashCode": {
+                "!type": "fn() -> number",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#hashCode()"
+              },
+              "getLogicalWidth": {
+                "!type": "fn() -> number",
+                "!url": ""
+              },
+              "setOrientation": {
+                "!type": "fn(orientation: number) -> void",
+                "!url": ""
+              },
+              "releaseReference": {
+                "!type": "fn() -> void",
+                "!url": ""
+              },
+              "getClass": {
+                "!type": "fn() -> +java.lang.Class",
+                "!url": "http://developer.android.com/reference/java/lang/Object.html#getClass()"
+              },
+              "acquireReference": {
+                "!type": "fn() -> void",
+                "!url": ""
+              }
+            }
+          },
+          "prototype": {
+            "getLogicalHeight": {
+              "!type": "fn() -> number",
+              "!url": ""
+            },
+            "notifyAll": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notifyAll()"
+            },
+            "setLogicalHeight": {
+              "!type": "fn(h: number) -> void",
+              "!url": ""
+            },
+            "getOrientation": {
+              "!type": "fn() -> number",
+              "!url": ""
+            },
+            "getRefCount": {
+              "!type": "fn() -> number",
+              "!url": ""
+            },
+            "setLogicalWidth": {
+              "!type": "fn(w: number) -> void",
+              "!url": ""
+            },
+            "equals": {
+              "!type": "fn(obj: +java.lang.Object) -> bool",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#equals(java.lang.Object)"
+            },
+            "notify": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notify()"
+            },
+            "isEligibleForPooling": {
+              "!type": "fn() -> bool",
+              "!url": ""
+            },
+            "wait": {
+              "!type": "fn(timeout: +java.lang.Long) -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#wait(long)"
+            },
+            "getByteCount": {
+              "!type": "fn() -> number",
+              "!url": ""
+            },
+            "toString": {
+              "!type": "fn() -> string",
+              "!url": ""
+            },
+            "hashCode": {
+              "!type": "fn() -> number",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#hashCode()"
+            },
+            "getLogicalWidth": {
+              "!type": "fn() -> number",
+              "!url": ""
+            },
+            "setOrientation": {
+              "!type": "fn(orientation: number) -> void",
+              "!url": ""
+            },
+            "releaseReference": {
+              "!type": "fn() -> void",
+              "!url": ""
+            },
+            "getClass": {
+              "!type": "fn() -> +java.lang.Class",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#getClass()"
+            },
+            "acquireReference": {
+              "!type": "fn() -> void",
+              "!url": ""
+            }
+          }
+        },
+        "ResourceRequestKey": {
+          "!url": "",
+          "from": {
+            "!type": "fn(res: +android.content.res.Resources, resId: number) -> +com.android.bitmap.ResourceRequestKey",
+            "!url": ""
+          },
+          "prototype": {
+            "notifyAll": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notifyAll()"
+            },
+            "toString": {
+              "!type": "fn() -> string",
+              "!url": ""
+            },
+            "equals": {
+              "!type": "fn(o: +java.lang.Object) -> bool",
+              "!url": ""
+            },
+            "createInputStream": {
+              "!type": "fn() -> +java.io.InputStream",
+              "!url": ""
+            },
+            "hasOrientationExif": {
+              "!type": "fn() -> bool",
+              "!url": ""
+            },
+            "wait": {
+              "!type": "fn(timeout: +java.lang.Long) -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#wait(long)"
+            },
+            "hashCode": {
+              "!type": "fn() -> number",
+              "!url": ""
+            },
+            "getClass": {
+              "!type": "fn() -> +java.lang.Class",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#getClass()"
+            },
+            "createFileDescriptorFactoryAsync": {
+              "!type": "fn(requestKey: +com.android.bitmap.RequestKey, callback: +com.android.bitmap.RequestKey.Callback) -> +com.android.bitmap.RequestKey.Cancelable",
+              "!url": ""
+            },
+            "notify": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notify()"
+            }
+          }
+        },
+        "ContiguousFIFOAggregator": {
+          "!url": "",
+          "!type": "fn()",
+          "prototype": {
+            "notifyAll": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notifyAll()"
+            },
+            "forget": {
+              "!type": "fn(key: +java.lang.Object) -> void",
+              "!url": ""
+            },
+            "toString": {
+              "!type": "fn() -> string",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#toString()"
+            },
+            "equals": {
+              "!type": "fn(obj: +java.lang.Object) -> bool",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#equals(java.lang.Object)"
+            },
+            "wait": {
+              "!type": "fn(timeout: +java.lang.Long) -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#wait(long)"
+            },
+            "execute": {
+              "!type": "fn(key: +java.lang.Object, task: +java.lang.Runnable) -> void",
+              "!url": ""
+            },
+            "hashCode": {
+              "!type": "fn() -> number",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#hashCode()"
+            },
+            "expect": {
+              "!type": "fn(key: +java.lang.Object, callback: +com.android.bitmap.ContiguousFIFOAggregator.Callback) -> void",
+              "!url": ""
+            },
+            "getClass": {
+              "!type": "fn() -> +java.lang.Class",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#getClass()"
+            },
+            "notify": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notify()"
+            }
+          }
+        },
+        "UnrefedBitmapCache": {
+          "!url": "",
+          "!type": "fn(targetSizeBytes: number, nonPooledFraction: +java.lang.Float, nullCapacity: number)",
+          "prototype": {
+            "notifyAll": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notifyAll()"
+            },
+            "toString": {
+              "!type": "fn() -> string",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#toString()"
+            },
+            "equals": {
+              "!type": "fn(obj: +java.lang.Object) -> bool",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#equals(java.lang.Object)"
+            },
+            "toDebugString": {
+              "!type": "fn() -> string",
+              "!url": ""
+            },
+            "get": {
+              "!type": "fn(key: +com.android.bitmap.RequestKey, incrementRefCount: bool) -> +com.android.bitmap.ReusableBitmap",
+              "!url": ""
+            },
+            "wait": {
+              "!type": "fn(timeout: +java.lang.Long) -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#wait(long)"
+            },
+            "clear": {
+              "!type": "fn() -> void",
+              "!url": ""
+            },
+            "put": {
+              "!type": "fn(key: +com.android.bitmap.RequestKey, value: +com.android.bitmap.ReusableBitmap) -> +com.android.bitmap.ReusableBitmap",
+              "!url": ""
+            },
+            "poll": {
+              "!type": "fn() -> +com.android.bitmap.ReusableBitmap",
+              "!url": ""
+            },
+            "hashCode": {
+              "!type": "fn() -> number",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#hashCode()"
+            },
+            "offer": {
+              "!type": "fn(value: +com.android.bitmap.ReusableBitmap) -> void",
+              "!url": ""
+            },
+            "getClass": {
+              "!type": "fn() -> +java.lang.Class",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#getClass()"
+            },
+            "notify": {
+              "!type": "fn() -> void",
+              "!url": "http://developer.android.com/reference/java/lang/Object.html#notify()"
+            },
+            "setBlocking": {
+              "!type": "fn(blocking: bool) -> void",
+              "!url": ""
+            }
+          }
+        }
+      }
+    }
+  }
+}

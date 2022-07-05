@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "43dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sb5963c55fd54476991285da183fea37",
+    "_text_": "Hello there",
+    "_top_": {
+        "type": "string",
+        "value": "195dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s3b2fb315b97434da853db9676956c4f",
+    "id": "btn1",
+    "info": null,
+    "isvisible": false,
+    "kuid": "7512b350206b46b88aeb7e5e7069fa82",
+    "name": "kony.ui.Button",
+    "parent": "Flxgrp",
+    "pf": "frmHome",
+    "wType": "Button",
+    "zindex": 1
+}
