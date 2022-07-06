@@ -75,7 +75,7 @@ if(base64.length > 0)
     }
   }
   ```
-  
+  #### Creating read and write file function 
   ```
   createMyFile : function()
   {
@@ -139,8 +139,6 @@ if(base64.length > 0)
       
       {
        gblbestfilepath=destFilePath;
-        //this.requestpermission();
-        
         this.shareUsingAndroid(destFilePath);
       }
        else if(deviceInfo === "iPhone")
@@ -155,7 +153,7 @@ if(base64.length > 0)
        }
   }
   ```
-  
+ #### Sahre Android function 
   
   ```
     shareUsingAndroid : function(path)
@@ -167,11 +165,8 @@ if(base64.length > 0)
         var fileObj = java.import("java.io.File");
         var intentObj = new Intent(Intent.ACTION_SEND);
         var contextObj = konyPackage.getActContext();
-        // Intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-        // Intent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
         Intent.setType(base64tContentType);
         Intent.putExtra(Intent.EXTRA_SUBJECT,"Test for sahre function");
-        //var uri = uriObj.fromFile(new fileObj(path));
         var uri = uriObj.parse(path);
         intentObj.putExtra(Intent.EXTRA_STREAM,uri);
         contextObj.startActivity(Intent.createChooser(intentObj,"Choose App")); }
@@ -180,6 +175,7 @@ if(base64.length > 0)
     }
   }
   ```
+  #### Sahre with Iphone function 
   ```
   shareUsingiPhone : function(path)
   {
