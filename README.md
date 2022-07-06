@@ -46,3 +46,27 @@ if(base64.length > 0)
       }
   }
   ```
+  #### Get Device Info if it is androi or iphone by using this code
+ ```
+ getDeviceInfo : function(){
+    try{
+      var deviceName = kony.os.deviceInfo().name;
+      if (deviceName === "android")
+      {
+        deviceInfo = "android";
+        this.createMyFile();
+      }
+      else if(deviceName === "iPhone")
+      {
+        deviceInfo = "iPhone";
+        this.createMyFile();
+      }
+      else
+      {
+        kony.print("Unsupported device type");
+      }
+    }catch(error){
+      kony.print("getDeviceInfo"+JSON.stringify(error));
+    }
+  }
+  ```
