@@ -1,6 +1,6 @@
 
 # Sharing function  Kony
-### In onclick function this code
+#### Share function to share the files from your device. You can use the APIs of the component to share files using the file paths or the base64 value. Write this code to take screenshot, convert the base64 code on button unlock function.
 ``` javascript
 var base64tContentType = "";
 var base64Type = "";
