@@ -75,3 +75,125 @@ if(base64.length > 0)
     }
   }
   ```
+  
+  ```
+  createMyFile : function()
+  {
+    try{
+      var rawbytes;
+      var fileExtension;
+      var destDirPath;
+      fileName = "social"; if(base64String !== null)
+      {
+        rawbytes = kony.convertToRawBytes(base64String);
+      }
+      else{
+        return;
+      } if (base64tContentType === "image/png")
+      {
+        fileExtension = ".png";
+      }
+      else if(base64tContentType === "image/jpg")
+      {
+        fileExtension = ".jpg";
+      }
+      else if(base64tContentType === "application/pdf")
+      {
+        fileExtension = ".pdf";
+      }
+      else
+      {
+        // fileExtension = ".txt";
+        fileExtension = ".docx";
+      } if(deviceInfo === "android")
+      {
+        destDirPath = kony.io.FileSystem.getExternalStorageDirectoryPath()+"/Sharing";
+      }
+      else if(deviceInfo === "iPhone")
+      {
+        destDirPath = kony.io.FileSystem.getDataDirectoryPath()+"/Sharing";
+      } 
+      var destFilePath = destDirPath + fileName+fileExtension;
+      var directory = new kony.io.File(destDirPath);
+      if((!directory.exists()))
+      {
+        directory.createDirectory();
+      }
+      else {
+        directory.remove(true);
+        directory.createDirectory();
+      } var fileObj = new kony.io.File(destFilePath);
+      if(!(fileObj.exists()))
+      {
+        fileObj.createFile();
+      }
+      else
+      {
+        fileObj.remove();
+        fileObj.createFile();
+      }
+      var writeObj = new kony.io.File(destFilePath).write(rawbytes);
+      if(writeObj)
+        
+      { if(deviceInfo === "android")
+      
+      {
+       gblbestfilepath=destFilePath;
+        //this.requestpermission();
+        
+        this.shareUsingAndroid(destFilePath);
+      }
+       else if(deviceInfo === "iPhone")
+       {
+         this.shareUsingiPhone(destFilePath);
+       }
+       else
+       {
+         kony.print("Unsupported device type");
+       } } }catch(error){
+         kony.print("createMyFile"+JSON.stringify(error));
+       }
+  }
+  ```
+  
+  
+  ```
+    shareUsingAndroid : function(path)
+  {
+    try{ var konyPackage = java.import("com.konylabs.android.KonyMain");
+        var Intent = java.import("android.content.Intent");
+        var String = java.import("java.lang.String");
+        var uriObj = java.import("android.net.Uri");
+        var fileObj = java.import("java.io.File");
+        var intentObj = new Intent(Intent.ACTION_SEND);
+        var contextObj = konyPackage.getActContext();
+        // Intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        // Intent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
+        Intent.setType(base64tContentType);
+        Intent.putExtra(Intent.EXTRA_SUBJECT,"Test for sahre function");
+        //var uri = uriObj.fromFile(new fileObj(path));
+        var uri = uriObj.parse(path);
+        intentObj.putExtra(Intent.EXTRA_STREAM,uri);
+        contextObj.startActivity(Intent.createChooser(intentObj,"Choose App")); }
+    catch(error){
+      kony.print("shareUsingAndroid"+JSON.stringify(error));
+    }
+  }
+  ```
+  ```
+  shareUsingiPhone : function(path)
+  {
+    try{ var textToShare = "Sharing Content";
+        var NSURL = objc.import("NSURL");
+        var NSURLObjectLink=NSURL.fileURLWithPath(path);
+        var shareItems = [textToShare, NSURLObjectLink];
+        var UIActivityViewController = objc.import("UIActivityViewController");
+        var avcObject=UIActivityViewController.alloc().initWithActivityItemsApplicationActivities(shareItems, undefined);
+        var UIApplication = objc.import("UIApplication");
+        UIApplication.sharedApplication().keyWindow.rootViewController.presentViewControllerAnimatedCompletion(avcObject, true, undefined); }catch(error){
+          kony.print("shareUsingiPhone"+JSON.stringify(error));
+        }
+    
+
+  }
+  ```
