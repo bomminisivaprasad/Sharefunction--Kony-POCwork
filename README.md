@@ -1,7 +1,7 @@
 
 # Sharing function  Kony
 ### In onclick function this code
-''' javascript
+``` javascript
 var base64tContentType = "";
 var base64Type = "";
 var base64String  = "";
@@ -45,4 +45,4 @@ if(base64.length > 0)
         kony.print("shareImage" + JSON.stringify(err));
       }
   }
-'''
+  ```
