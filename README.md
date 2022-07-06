@@ -3,6 +3,8 @@
 #### Share function to share the files from your device. You can use the APIs of the component to share files using the file paths or the base64 value. Write this code to take screenshot, convert the base64 code on button unlock function. Response of base64 code first five letters we will decide mimeTypeString.
 - var mimeTypeString = base64.substring(0,5);
         if(mimeTypeString === "iVBOR") => PNG
+- if(mimeTypeString === "JVBERi") => PDF
+- if(mimeTypeString.substring(0,3) === "/9j") =>JPG
 
 ``` javascript
 var base64tContentType = "";
