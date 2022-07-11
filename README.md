@@ -196,7 +196,11 @@ if(base64.length > 0)
   #### Share function take screen short and send email the png email
   
   ```
-  var testImg = kony.image.createImageFromSnapShot(frmHome.Flxgrp);
+  
+   
+function onclickbtn(){
+
+var testImg = kony.image.createImageFromSnapShot(frmHome.Flxgrp);
 
 frmHome.Img2.image = testImg;
 
@@ -226,6 +230,10 @@ var msgbody = "Testing openEmail with attachment";
 var attachment = {mimetype: "text/*",attachment: fileRawBytes };
 
 kony.phone.openEmail(to,cc,bcc,sub, msgbody, false, [attachment]);
+
+
+}
+
 
 ```
 
